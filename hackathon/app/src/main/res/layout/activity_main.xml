@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tela_principal"
+    tools:context="com.example.hackathon.daki.MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="segunda tela"
+        android:textSize="70sp" />
+
+
+
+    <!---->
+        <!--<EditText-->
+            <!--android:id="@+id/txtLogin2ks"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@+id/txtLogin3ks"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginBottom="32dp"-->
+            <!--android:ems="10"-->
+            <!--android:hint="E-mail"-->
+            <!--android:inputType="textMultiLine|textEmailAddress"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="30sp"-->
+            <!--tools:textColorHint="?attr/colorButtonNormal" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/txtLogin3ks"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@+id/btnLogin2ks"-->
+            <!--android:layout_alignStart="@+id/txtLogin2ks"-->
+            <!--android:layout_marginBottom="28dp"-->
+            <!--android:ems="10"-->
+            <!--android:fontFamily="monospace"-->
+            <!--android:hint="Password"-->
+            <!--android:inputType="textMultiLine|textPassword"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="?attr/colorButtonNormal"-->
+            <!--android:textSize="30sp"-->
+            <!--tools:textColorHint="?attr/colorButtonNormal"-->
+            <!--tools:textColorLink="?attr/colorButtonNormal" />-->
+
+    <Button
+        android:id="@+id/btnLoginEntrarks"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Entrar"
+        android:textAlignment="center"
+        android:background="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.743" />
+
+    <Button
+        android:id="@+id/btnLoginFacebookks"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:text="Entrar com Facebook"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.896" />
+
+    <!--</RelativeLayout>-->
+
+
+</android.support.constraint.ConstraintLayout>
