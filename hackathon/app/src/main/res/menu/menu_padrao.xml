@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/menuListaAprovados"
+        android:layout_width="wrap_content"
+        android:title="@string/help_name"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/menuListaPendentes"
+        android:title="@string/pendentes_name"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/menuCriarAnuncio"
+        android:title="@string/criar_name"
+        app:showAsAction="never"></item>
+
+
+    <item
+        android:id="@+id/menuAbout"
+        android:title="@string/about_name"
+        app:showAsAction="never"></item>
+
+
+    <item
+        android:id="@+id/menuLogout"
+        android:title="@string/update_name"
+        app:showAsAction="never"></item>
+
+
+</menu>

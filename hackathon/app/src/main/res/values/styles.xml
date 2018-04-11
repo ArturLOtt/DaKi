@@ -1,11 +1,31 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/frontDakiBlue</item>
+    </style>
+
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <style name="CustomToolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background" background="@drawable/barinha"></item>
+            <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!-- Menu Item Theme -->
+
+
+    <style name="CustomPopupStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/frontDakiBlue</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">-4dp</item>
+    </style>
+
+    <style name="DakiTheme" parent="AppTheme" >
+        <item name="colorAccent">@color/frontEntrar</item>
+        <item name="colorPrimary">@color/colorCancelarRegistrar</item>
     </style>
 
 </resources>

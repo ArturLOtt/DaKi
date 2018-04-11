@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.CardList.CriarAnuncioActivity">
+
+    <include
+        android:id="@+id/barDaki"
+        layout="@layout/app_bar">
+
+    </include>
+
+
+    <ScrollView
+        android:id="@+id/scrollCriar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/barDaki">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/clCriar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/llCriar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:background="@drawable/tela_criacao"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtCriarAutor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="52dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <EditText
+                        android:id="@+id/editCriarAutor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Autor do Anuncio" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtCriarTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.25"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/editCriarTitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Título do Anuncio"
+                        android:textStyle="bold"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtCriarEndereks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.25"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/editCriarEndereks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Endereço" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clCriarDeData"
+                    android:layout_width="321dp"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/txtCriarData"
+                        android:layout_width="146dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/btnCriarData"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+
+                        <EditText
+                            android:id="@+id/editCriarData"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Data de Início"
+                            android:inputType="date" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/btnCriarData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@color/cardview_dark_background"
+                        android:text="Selecionar Data"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.48" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clCriar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:id="@+id/btnCriarUpload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="236dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="236dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/cardview_dark_background"
+                        android:text="Upload de Foto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivFotoPequena"
+                        android:layout_width="151dp"
+                        android:layout_height="94dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@android:color/darker_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/btnCriarUpload"
+                        app:layout_constraintHorizontal_bias="0.375"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clTipos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_tipo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@string/hint_password"
+                        android:fontFeatureSettings="@string/hint_password"
+                        android:paddingRight="15dp"
+                        android:text="Tipo:"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_tipo"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/radio_even"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Evento"
+                            android:textColor="@color/colorEvento"
+
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/radio_serv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Serviço"
+                            android:textColor="@color/colorServico"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/radio_aler"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alerta"
+                            android:textColor="@color/colorAlerta"
+                            android:textStyle="bold" />
+
+
+                    </RadioGroup>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtCriarDescriks"
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.25"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/editCriarDescriks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Descrição do Anúncio"
+                        android:maxLength="250" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clCriar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:id="@+id/btnCriarInserir"
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/frontDakiBlue"
+                        android:text="Inserir Anuncio"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/btnCriarCancelar"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <Button
+                        android:id="@+id/btnCriarCancelar"
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorCancelarRegistrar"
+                        android:onClick="voltarParaLista"
+                        android:text="Cancelar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/btnCriarInserir"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
+
+
+

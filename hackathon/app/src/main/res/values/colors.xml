@@ -2,7 +2,25 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+
+    <!--cores combinadas com o Front-->
+    <color name="frontDakiBlue">#2AACF3</color>
+    <color name="colorAccent">#D8E1EA</color>
+    <color name="frontEntrar">#8197AD</color>
+    <color name="frontDELETE">#CA493A</color>
+    <color name="frontVoltar">#346DA6</color>
+    <color name="frontDAKIdeNOVO">#1DA9F4</color>
 
     <color name="colorWhite">#eceaeb</color>
+    <color name="colorCancelarRegistrar">#ca333030</color>
+    <color name="colorFacebook">#22349b</color>
+
+    <color name="colorEvento">#db109be6</color>
+    <color name="colorServico">#db40ba46</color>
+    <color name="colorAlerta">#c2d94a5b</color>
+    <color name="Birogctellus">#e8dac224</color>
+
+
+
 </resources>

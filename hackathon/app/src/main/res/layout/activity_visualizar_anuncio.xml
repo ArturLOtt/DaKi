@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.CardList.VisualizarAprovadosActivity">
+
+    <include
+        android:id="@+id/barDaki"
+        layout="@layout/app_bar">
+
+    </include>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clPlus"
+        android:layout_width="360dp"
+        android:layout_height="512dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barDaki">
+
+
+        <ImageView
+            android:id="@+id/imgVisualizar"
+            android:layout_width="318dp"
+            android:layout_height="218dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/frontEntrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTituloVisualizar"
+            android:layout_width="325dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Título do Anuncio"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="lato"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgVisualizar" />
+
+        <TextView
+            android:id="@+id/txtAutorVisualizar"
+            android:layout_width="313dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Autor do Anuncio"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:typeface="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTituloVisualizar" />
+
+        <TextView
+            android:id="@+id/txtRuaVisualizar"
+            android:layout_width="313dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:text="Endereço do Anuncio"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAutorVisualizar" />
+
+        <TextView
+            android:id="@+id/txtDataVisualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Data"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRuaVisualizar" />
+
+        <TextView
+            android:id="@+id/txtDescricaoVisualizar"
+            android:layout_width="224dp"
+            android:layout_height="77dp"
+            android:layout_marginBottom="64dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Descrição \n Descrição  \n Descrição  \n Descrição"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDataVisualizar" />
+
+
+        <Button
+            android:id="@+id/btnVisualizarDeletar"
+            android:layout_width="163dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/frontDELETE"
+            android:text="@string/Deletar_Anuncio"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescricaoVisualizar" />
+
+
+        <Button
+            android:id="@+id/btnVisualizarAprovar"
+            android:layout_width="163dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/Birogctellus"
+            android:text="@string/Aprovar_Anuncio"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescricaoVisualizar" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

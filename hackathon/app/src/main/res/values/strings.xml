@@ -1,3 +1,50 @@
 <resources>
     <string name="app_name">Daki</string>
+    <string name="settings_name">Settings</string>
+    <string name="update_name">Log Out</string>
+    <string name="help_name">Lista de Anuncios Aprovados</string>
+    <string name="pendentes_name">Lista de Anuncios Pendentes</string>
+    <string name="registro_name">Registrar</string>
+    <string name="criar_name">Criar um novo Anuncio</string>
+    <string name="questInfir_name">quest de Cadastro</string>
+    <string name="ver_anuncio_name">Visualizar Anuncio</string>
+    <string name="about_name">Sobre Nós</string>
+    <string name="action_settings">action_settings</string>
+    <string name="CriarUmaConta"><u>Criar uma Conta</u></string>
+    <string name="Start_quiz_name">Começar Quiz</string>
+    <string name="entrar">Entrar</string>
+    <string name="entrar_com_outras_m_dias_sociais">Entrar com Outras Mídias Sociais</string>
+    <string name="senha">Senha</string>
+    <string name="copiar">Copiar</string>
+    <string name="enviar_por_messenger">Enviar Por Messenger</string>
+    <string name="mudar_foto"><u>Mudar Foto</u></string>
+    <string name="perfil_perfil_perfil"><u>Perfil_Perfil_Perfil</u></string>
+    <string name="apelido_ou_e_mail">Apelido ou E-mail</string>
+    <string name="preencher_todos_os_question_rios">PREENCHER TODOS OS QUESTIONÁRIOS</string>
+    <string name="atualizar_question_rio">ATUALIZAR QUESTIONÁRIO</string>
+    <string name="editar_informa_es_pessoais">EDITAR INFORMAÇÕES PESSOAIS</string>
+    <string name="come_ar_question_rio">Começar Questionário</string>
+    <string name="question_rio_de_entrada">Você Deseja Prosseguir ao Questionário?</string>
+    <string name="qual_tipo_de_an_ncio_voc_deseja_criar">Qual tipo de Anúncio você deseja Criar?</string>
+    <string name="Deletar_Anuncio">Deletar Anúncio</string>
+    <string name="Aprovar_Anuncio">Aprovar Anúncio</string>
+    <string name="ac_dc">AC/DC AC/DC AC/DC AC/DC</string>
+    <string name="local">Local Local Local Local Local Local</string>
+    <string name="ou">OU</string>
+    <string name="facebook_app_id">1614470132177400</string>
+
+    <string name="hint_dob">Data de nascimento (DD/MM/AAAA)</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_gender">Genero</string>
+    <string name="male">Masculino</string>
+    <string name="female">Feminino</string>
+    <string name="btn_sign_up">Prosseguir</string>
+    <string name="err_msg_name">Please enter a Name</string>
+    <string name="err_msg_required">Valid Input Required</string>
+    <string name="err_msg_email">Please enter a Valid Email</string>
+    <string name="err_msg_password">Enter a Password</string>
+    <string name="err_msg_dob">Enter a valid D.O.B</string>
+    <string name="search_hint">Pesquisa</string>
+
+
 </resources>

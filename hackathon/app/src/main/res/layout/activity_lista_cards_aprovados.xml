@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tela_lista"
+    tools:context=".View.CardList.ListaCardsAprovadosActivity">
+
+
+    <include
+        android:id="@+id/barDaki"
+        layout="@layout/app_bar">
+
+    </include>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/llsuperiorAprovados"
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barDaki">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ccsuperiorAprovados"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <SearchView
+                android:id="@+id/svPesquisaAprovados"
+                android:layout_width="338dp"
+                android:layout_height="41dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.829" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ccaprovadosembaixo"
+        android:layout_width="384dp"
+        android:layout_height="379dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:minHeight="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llsuperiorAprovados"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:id="@+id/llAprovados"
+            android:layout_width="393dp"
+            android:layout_height="378dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvListaCardsAprovadosx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>
